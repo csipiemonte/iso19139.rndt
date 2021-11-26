@@ -850,7 +850,7 @@
             Index those types of citation title to found dataset related to INSPIRE (which may be better than keyword
             which are often used for other types of datasets).
 
-            "1089/2010" is maybe too fuzzy but could work for translated citation like "Règlement n°1089/2010, Annexe II-6" TODO improved
+            "1089/2010" is maybe too fuzzy but could work for translated citation like "RÃ¨glement nÂ°1089/2010, Annexe II-6" TODO improved
         -->
         <xsl:if test="(
                                 contains(gmd:DQ_ConformanceResult/gmd:specification/gmd:CI_Citation/gmd:title/(gco:CharacterString|gmx:Anchor), '1089/2010') or
@@ -961,13 +961,13 @@
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
     <xsl:variable name="identificatore" select="gmd:identificationInfo/*/gmd:citation/gmd:CI_Citation/gmd:identifier/*/gmd:code/(gco:CharacterString|gmx:Anchor)/text()"/>
-    <xsl:variable name="id_livello_superiore" select="gmd:identificationInfo/*/gmd:citation/gmd:CI_Citation/gmd:series/gmd:CI_Series/gmd:issueIdentification/(gco:CharacterString|gmx:Anchor)/text()"/>  
-    <xsl:variable name="is_child" select="$identificatore != $id_livello_superiore and $id_livello_superiore != ''"/>  
+    <xsl:variable name="id_livello_superiore" select="gmd:identificationInfo/*/gmd:citation/gmd:CI_Citation/gmd:series/gmd:CI_Series/gmd:issueIdentification/(gco:CharacterString|gmx:Anchor)/text()"/>
+    <xsl:variable name="is_child" select="$identificatore != $id_livello_superiore and $id_livello_superiore != ''"/>
 
-    <xsl:if test="$is_child">    
+    <xsl:if test="$is_child">
       <Field name="parentUuid" string="{string($id_livello_superiore)}" store="true" index="true"/>
     </xsl:if>
-    
+
     <Field name="isChild" string="$is_child" store="true" index="true"/>
 
     <xsl:for-each select="gmd:metadataStandardName/gco:CharacterString">
