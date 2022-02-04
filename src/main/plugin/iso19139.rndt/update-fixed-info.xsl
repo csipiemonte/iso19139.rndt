@@ -293,11 +293,11 @@
              <xsl:value-of select="$oldLivSupId"/>
           </xsl:otherwise>
        </xsl:choose>
-        
+
     </xsl:variable>
 
 
-  <xsl:template match="gmd:identificationInfo/*/gmd:citation/gmd:CI_Citation" priority="10">
+  <xsl:template match="gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation" priority="10">
     <xsl:copy>
       <xsl:apply-templates select="@*"/>
       <xsl:apply-templates select="gmd:title"/>
@@ -305,7 +305,7 @@
       <xsl:apply-templates select="gmd:date"/>
       <xsl:apply-templates select="gmd:edition"/>
       <xsl:apply-templates select="gmd:editionDate"/>
-      
+
       <gmd:identifier>
          <gmd:MD_Identifier>
             <gmd:code>
@@ -313,15 +313,15 @@
             </gmd:code>
          </gmd:MD_Identifier>
       </gmd:identifier>
-      
+
       <xsl:apply-templates select="gmd:citedResponsibleParty"/>
       <xsl:apply-templates select="gmd:presentationForm"/>
-      
+
       <xsl:choose>
          <xsl:when test="gmd:series/gmd:CI_Series/gmd:issueIdentification">
-            <xsl:apply-templates select="gmd:series"/>            
+            <xsl:apply-templates select="gmd:series"/>
          </xsl:when>
-         <xsl:otherwise>         
+         <xsl:otherwise>
             <!-- issueIdentification is missing, create a brand new element -->
             <!-- TODO: may need to copy other CI_Series/* elements -->
             <gmd:series>
@@ -331,17 +331,38 @@
                 </gmd:issueIdentification>
               </gmd:CI_Series>
             </gmd:series>
-            
+
          </xsl:otherwise>
       </xsl:choose>
-      
+
       <xsl:apply-templates select="gmd:otherCitationDetails"/>
       <xsl:apply-templates select="gmd:collectiveTitle"/>
       <xsl:apply-templates select="gmd:ISBN"/>
       <xsl:apply-templates select="gmd:ISSN"/>
     </xsl:copy>
   </xsl:template>
+<!--Modifica CSI: Distinto comportamento dei servizi che non devono avere il tag gmd:series-->
+<xsl:template match="gmd:identificationInfo/srv:SV_ServiceIdentification/gmd:citation/gmd:CI_Citation" priority="10">
+    <xsl:copy>
+      <xsl:apply-templates select="@*"/>
+      <xsl:apply-templates select="gmd:title"/>
+      <xsl:apply-templates select="gmd:alternateTitle"/>
+      <xsl:apply-templates select="gmd:date"/>
+      <xsl:apply-templates select="gmd:edition"/>
+      <xsl:apply-templates select="gmd:editionDate"/>
 
+      <gmd:identifier>
+         <gmd:MD_Identifier>
+            <gmd:code>
+               <gco:CharacterString><xsl:value-of select="$resId"/></gco:CharacterString>
+            </gmd:code>
+         </gmd:MD_Identifier>
+      </gmd:identifier>
+
+      <xsl:apply-templates select="gmd:citedResponsibleParty"/>
+      </xsl:copy>
+  </xsl:template>
+  <!--fine modifica CSI-->
 
     <!-- ================================================================= -->
     <!-- CI_Series -->
