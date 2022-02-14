@@ -313,12 +313,6 @@
 
       <sidePanel>
         <directive data-gn-validation-report=""/>
-        <directive data-gn-onlinesrc-list=""/>
-        <directive gn-geo-publisher=""
-                   data-ng-if="gnCurrentEdit.geoPublisherConfig"
-                   data-config="{{gnCurrentEdit.geoPublisherConfig}}"
-                   data-lang="lang"/>
-        <directive data-gn-suggestion-list=""/>
         <directive data-gn-need-help="user-guide/describing-information/creating-metadata.html"/>
       </sidePanel>
 
@@ -618,7 +612,7 @@
                <!--
                     allow-free-text-keywords: eliminamo il bottone per l'aggiunta di keyword libere,
                                               in quanto esiste un bottone apposto nella sezione successiva
-                    data-include: 
+                    data-include:
                       - eliminamo dalla lista dei thesauri quelli già usati in questo documento
                       - Eliminiamo inoltre i thesauri aggiungibili tramite bottoni appositi nelle relative sezioni:
                          - Thesaurus nei servizi
@@ -2173,9 +2167,9 @@
 
         <section name="referenceSystems">
 
-            <field 
+            <field
                   name="rsFieldAnchor"
-                  templateModeOnly="true"                
+                  templateModeOnly="true"
                   xpath="/gmd:MD_Metadata/gmd:referenceSystemInfo/gmd:MD_ReferenceSystem/gmd:referenceSystemIdentifier[boolean(gmd:RS_Identifier/gmd:code/gmx:Anchor)]"
                   if="count(gmd:MD_Metadata/gmd:referenceSystemInfo/gmd:MD_ReferenceSystem/gmd:referenceSystemIdentifier[boolean(gmd:RS_Identifier/gmd:code/gmx:Anchor)]) > 0"
                   del="../..">
@@ -2199,7 +2193,7 @@
               </template>
             </field>
 
-            <field 
+            <field
               name="rsFieldCCS"
               templateModeOnly="true"
               xpath="/gmd:MD_Metadata/gmd:referenceSystemInfo/gmd:MD_ReferenceSystem/gmd:referenceSystemIdentifier[gmd:RS_Identifier/gmd:code/gco:CharacterString and gmd:RS_Identifier/gmd:codeSpace]"
@@ -2210,7 +2204,7 @@
                   <key label="rsCode"
                        xpath="gmd:RS_Identifier/gmd:code/gco:CharacterString"
                        tooltip="gmd:referenceSystemInfo"/>
-                  <key label="rsCodeSpace" 
+                  <key label="rsCodeSpace"
                        xpath="gmd:RS_Identifier/gmd:codeSpace/gco:CharacterString"/>
                 </values>
                 <snippet>
@@ -2230,7 +2224,7 @@
 
             <field
               name="rsFieldCode"
-              templateModeOnly="true"            
+              templateModeOnly="true"
               xpath="/gmd:MD_Metadata/gmd:referenceSystemInfo/gmd:MD_ReferenceSystem/gmd:referenceSystemIdentifier[gmd:RS_Identifier/gmd:code/gco:CharacterString and not(gmd:RS_Identifier/gmd:codeSpace)]"
               if="count(gmd:MD_Metadata/gmd:referenceSystemInfo/gmd:MD_ReferenceSystem/gmd:referenceSystemIdentifier[gmd:RS_Identifier/gmd:code/gco:CharacterString and not(gmd:RS_Identifier/gmd:codeSpace)]) > 0"
               del="../..">
@@ -4454,7 +4448,7 @@
         <for name="srv:SV_OperationMetadata"/>
         <for name="srv:SV_Parameter"/>
         <for name="srv:DCP"/>
-        
+
         <for name="srv:operationName"/>
       </flatModeExceptions>
     </view>
@@ -4462,12 +4456,6 @@
     <view name="advanced">
     <sidePanel>
       <directive data-gn-validation-report=""/>
-      <directive data-gn-onlinesrc-list=""/>
-      <directive gn-geo-publisher=""
-                 data-ng-if="gnCurrentEdit.geoPublisherConfig"
-                 data-config="{{gnCurrentEdit.geoPublisherConfig}}"
-                 data-lang="lang"/>
-      <directive data-gn-suggestion-list=""/>
       <directive data-gn-need-help="user-guide/describing-information/creating-metadata.html"/>
     </sidePanel>
 
@@ -5043,12 +5031,6 @@
     <view name="xml">
       <sidePanel>
         <directive data-gn-validation-report=""/>
-        <directive data-gn-onlinesrc-list=""/>
-        <directive gn-geo-publisher=""
-                   data-ng-if="gnCurrentEdit.geoPublisherConfig"
-                   data-config="{{gnCurrentEdit.geoPublisherConfig}}"
-                   data-lang="lang"/>
-        <directive data-gn-suggestion-list=""/>
         <directive data-gn-need-help="user-guide/describing-information/creating-metadata.html"/>
       </sidePanel>
       <tab id="xml" default="true"/>
