@@ -776,12 +776,12 @@
             <Field name="_mdActions" string="mdActions-download" store="false" index="true"/>
           </xsl:if>
 
-          <xsl:if test="contains($protocol, 'OGC:WMS') or $wmsLinkNoProtocol">
+          <xsl:if test="contains($protocol, 'WMS') or $wmsLinkNoProtocol">
             <Field name="dynamic" string="true" store="false" index="true"/>
             <Field name="_mdActions" string="mdActions-view" store="false" index="true"/>
           </xsl:if>
 
-          <xsl:if test="contains($protocol, 'OGC:WPS')">
+          <xsl:if test="contains($protocol, 'WPS')">
             <Field name="_mdActions" string="mdActions-process" store="false" index="true"/>
           </xsl:if>
 
@@ -794,7 +794,7 @@
 
           <!-- Add KML link if WMS -->
           <xsl:if
-            test="starts-with($protocol,'OGC:WMS') and string($linkage)!='' and string($title)!=''">
+            test="starts-with($protocol,'WMS') and string($linkage)!='' and string($title)!=''">
 
             <xsl:if test="$indexWmsAsKml">
               <!-- FIXME : relative path -->
@@ -961,13 +961,13 @@
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
     <xsl:variable name="identificatore" select="gmd:identificationInfo/*/gmd:citation/gmd:CI_Citation/gmd:identifier/*/gmd:code/(gco:CharacterString|gmx:Anchor)/text()"/>
-    <xsl:variable name="id_livello_superiore" select="gmd:identificationInfo/*/gmd:citation/gmd:CI_Citation/gmd:series/gmd:CI_Series/gmd:issueIdentification/(gco:CharacterString|gmx:Anchor)/text()"/>  
-    <xsl:variable name="is_child" select="$identificatore != $id_livello_superiore and $id_livello_superiore != ''"/>  
+    <xsl:variable name="id_livello_superiore" select="gmd:identificationInfo/*/gmd:citation/gmd:CI_Citation/gmd:series/gmd:CI_Series/gmd:issueIdentification/(gco:CharacterString|gmx:Anchor)/text()"/>
+    <xsl:variable name="is_child" select="$identificatore != $id_livello_superiore and $id_livello_superiore != ''"/>
 
-    <xsl:if test="$is_child">    
+    <xsl:if test="$is_child">
       <Field name="parentUuid" string="{string($id_livello_superiore)}" store="true" index="true"/>
     </xsl:if>
-    
+
     <Field name="isChild" string="$is_child" store="true" index="true"/>
 
     <xsl:for-each select="gmd:metadataStandardName/gco:CharacterString">

@@ -38,7 +38,7 @@
           <gmd:phone>
             <gmd:CI_Telephone>
               <gmd:voice>
-                <gco:CharacterString>Telefono del soggetto responsabile dei metadati</gco:CharacterString>
+                <gco:CharacterString></gco:CharacterString>
               </gmd:voice>
             </gmd:CI_Telephone>
           </gmd:phone>
@@ -101,28 +101,28 @@
           <gmd:citedResponsibleParty>
             <gmd:CI_ResponsibleParty>
               <gmd:organisationName>
-                <gco:CharacterString>Nome dell'ufficio responsabile del sevizio</gco:CharacterString>
+                <gco:CharacterString>Regione Piemonte</gco:CharacterString>
               </gmd:organisationName>
               <gmd:contactInfo>
                 <gmd:CI_Contact>
                   <gmd:phone>
                     <gmd:CI_Telephone>
                       <gmd:voice>
-                        <gco:CharacterString>Telefono dell'ufficio responsabile del sevizio</gco:CharacterString>
+                        <gco:CharacterString></gco:CharacterString>
                       </gmd:voice>
                     </gmd:CI_Telephone>
                   </gmd:phone>
                   <gmd:address>
                     <gmd:CI_Address>
                       <gmd:electronicMailAddress>
-                        <gco:CharacterString>responsabile.servizio@organizzazione.it</gco:CharacterString>
+                        <gco:CharacterString>info-geoportale@regione.piemonte.it</gco:CharacterString>
                       </gmd:electronicMailAddress>
                     </gmd:CI_Address>
                   </gmd:address>
                   <gmd:onlineResource>
                     <gmd:CI_OnlineResource>
                       <gmd:linkage>
-                        <gmd:URL>http://sito.web.ufficio.responsabile.servizio.it</gmd:URL>
+                        <gmd:URL>https://www.regione.piemonte.it</gmd:URL>
                       </gmd:linkage>
                     </gmd:CI_OnlineResource>
                   </gmd:onlineResource>
@@ -149,7 +149,7 @@
               <gmd:phone>
                 <gmd:CI_Telephone>
                   <gmd:voice>
-                    <gco:CharacterString>Telefono dell'organizzazione da contattare per avere informazioni sulla risorsa</gco:CharacterString>
+                    <gco:CharacterString></gco:CharacterString>
                   </gmd:voice>
                 </gmd:CI_Telephone>
               </gmd:phone>
@@ -174,6 +174,16 @@
           </gmd:role>
         </gmd:CI_ResponsibleParty>
       </gmd:pointOfContact>
+	  <gmd:descriptiveKeywords>
+				<gmd:MD_Keywords>
+					<gmd:keyword>
+						<gco:CharacterString>RNDT</gco:CharacterString>
+					</gmd:keyword>
+					<gmd:keyword>
+						<gco:CharacterString>EU</gco:CharacterString>
+					</gmd:keyword>
+				</gmd:MD_Keywords>
+			</gmd:descriptiveKeywords>
       <!-- VINCOLI SUI SERVIZI -->
       <gmd:resourceConstraints xmlns:srv="http://www.isotc211.org/2005/srv"
                                xmlns:gmx="http://www.isotc211.org/2005/gmx"
@@ -184,7 +194,7 @@
                                     codeListValue="otherRestrictions">otherRestrictions</gmd:MD_RestrictionCode>
           </gmd:accessConstraints>
           <gmd:otherConstraints>
-            <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadatacodelist/LimitationsOnPublicAccess"></gmx:Anchor>
+             <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations">no limitations to public access</gmx:Anchor>
           </gmd:otherConstraints>
         </gmd:MD_LegalConstraints>
       </gmd:resourceConstraints>
@@ -197,7 +207,7 @@
                                     codeListValue="otherRestrictions">otherRestrictions</gmd:MD_RestrictionCode>
           </gmd:useConstraints>
           <gmd:otherConstraints>
-            <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse"></gmx:Anchor>
+            <gco:CharacterString>https://creativecommons.org/licenses/by/4.0/deed.it</gco:CharacterString>
           </gmd:otherConstraints>
         </gmd:MD_LegalConstraints>
       </gmd:resourceConstraints>
@@ -210,29 +220,19 @@
           <gmd:geographicElement>
             <gmd:EX_GeographicBoundingBox>
               <gmd:westBoundLongitude>
-                <gco:Decimal>-180</gco:Decimal>
-              </gmd:westBoundLongitude>
-              <gmd:eastBoundLongitude>
-                <gco:Decimal>180</gco:Decimal>
-              </gmd:eastBoundLongitude>
-              <gmd:southBoundLatitude>
-                <gco:Decimal>-90</gco:Decimal>
-              </gmd:southBoundLatitude>
-              <gmd:northBoundLatitude>
-                <gco:Decimal>90</gco:Decimal>
-              </gmd:northBoundLatitude>
+								<gco:Decimal>6.62</gco:Decimal>
+							</gmd:westBoundLongitude>
+							<gmd:eastBoundLongitude>
+								<gco:Decimal>9.21</gco:Decimal>
+							</gmd:eastBoundLongitude>
+							<gmd:southBoundLatitude>
+								<gco:Decimal>44.06</gco:Decimal>
+							</gmd:southBoundLatitude>
+							<gmd:northBoundLatitude>
+								<gco:Decimal>46.46</gco:Decimal>
+							</gmd:northBoundLatitude>
             </gmd:EX_GeographicBoundingBox>
           </gmd:geographicElement>
-          <gmd:temporalElement>
-            <gmd:EX_TemporalExtent>
-              <gmd:extent>
-                <gml:TimePeriod gml:id="TP1">
-                  <gml:beginPosition>2009-01-01</gml:beginPosition>
-                  <gml:endPosition>2013-12-31</gml:endPosition>
-                </gml:TimePeriod>
-              </gmd:extent>
-            </gmd:EX_TemporalExtent>
-          </gmd:temporalElement>
         </gmd:EX_Extent>
       </srv:extent>
       <!-- Tipo di aggancio tra il servizio e i dati associati -->
@@ -254,13 +254,13 @@
           <srv:connectPoint>
             <gmd:CI_OnlineResource>
               <gmd:linkage>
-                <gmd:URL>http://url.servizio?service=WMS</gmd:URL>
+                <gmd:URL>http://url.servizio?service=WMS&amp;version=1.3.0&amp;request=getCapabilities</gmd:URL>
               </gmd:linkage>
             </gmd:CI_OnlineResource>
           </srv:connectPoint>
         </srv:SV_OperationMetadata>
       </srv:containsOperations>
-      <srv:operatesOn xlink:href="http://www.rndt.gov.it#r_abruzz:Carta_Parchi" />
+      <srv:operatesOn xlink:href="https://www.geoportale.piemonte.it/geonetwork/srv/eng/csw?request=GetRecordById&amp;service=CSW&amp;version=2.0.2&amp;id=r_piemon:4368c018-6b58-4834-b233-c45360cb1206&amp;elementSetName=full&amp;outputSchema=http://www.isotc211.org/2005/gmd"/>
     </srv:SV_ServiceIdentification>
   </gmd:identificationInfo>
   <!-- QUALITÀ DEI DATI -->
@@ -308,6 +308,7 @@
               <gmd:explanation>
                 <gco:CharacterString>Fare riferimento alle specifiche indicate</gco:CharacterString>
               </gmd:explanation>
+			 <gmd:pass gco:nilReason="unknown" /> 
             </gmd:DQ_ConformanceResult>
           </gmd:result>
         </gmd:DQ_DomainConsistency>

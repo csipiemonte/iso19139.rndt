@@ -35,7 +35,7 @@
           <gmd:phone>
             <gmd:CI_Telephone>
               <gmd:voice>
-                <gco:CharacterString>Telefono del soggetto responsabile dei metadati</gco:CharacterString>
+                <gco:CharacterString></gco:CharacterString>
               </gmd:voice>
             </gmd:CI_Telephone>
           </gmd:phone>
@@ -124,7 +124,7 @@
       <gmd:referenceSystemIdentifier>
         <gmd:RS_Identifier>
           <gmd:code>
-            <gco:CharacterString>WGS84</gco:CharacterString>
+            <gmx:Anchor xlink:href="http://www.opengis.net/def/crs/EPSG/0/3035">ETRS89-LAEA</gmx:Anchor>
           </gmd:code>
         </gmd:RS_Identifier>
       </gmd:referenceSystemIdentifier>
@@ -158,28 +158,28 @@
           <gmd:citedResponsibleParty>
             <gmd:CI_ResponsibleParty>
               <gmd:organisationName>
-                <gco:CharacterString>Nome dell'ufficio responsabile del dato</gco:CharacterString>
+                <gco:CharacterString>Regione Piemonte</gco:CharacterString>
               </gmd:organisationName>
               <gmd:contactInfo>
                 <gmd:CI_Contact>
                   <gmd:phone>
                     <gmd:CI_Telephone>
                       <gmd:voice>
-                        <gco:CharacterString>Telefono dell'ufficio responsabile del dato</gco:CharacterString>
+                        <gco:CharacterString></gco:CharacterString>
                       </gmd:voice>
                     </gmd:CI_Telephone>
                   </gmd:phone>
                   <gmd:address>
                     <gmd:CI_Address>
                       <gmd:electronicMailAddress>
-                        <gco:CharacterString>responsabile.dato@organizzazione.it</gco:CharacterString>
+                        <gco:CharacterString>info-geoportale@regione.piemonte.it</gco:CharacterString>
                       </gmd:electronicMailAddress>
                     </gmd:CI_Address>
                   </gmd:address>
                   <gmd:onlineResource>
                     <gmd:CI_OnlineResource>
                       <gmd:linkage>
-                        <gmd:URL>http://sito.web.ufficio.responsabile.del.dato.it</gmd:URL>
+                        <gmd:URL>https://www.regione.piemonte.it</gmd:URL>
                       </gmd:linkage>
                     </gmd:CI_OnlineResource>
                   </gmd:onlineResource>
@@ -204,7 +204,7 @@
             </gmd:CI_Series>
           </gmd:series>
           <gmd:otherCitationDetails>
-            <gco:CharacterString>http://www.territorio.provincia.tn.it</gco:CharacterString>
+            <gco:CharacterString>eventuali informazioni supplementari</gco:CharacterString>
           </gmd:otherCitationDetails>
         </gmd:CI_Citation>
       </gmd:citation>
@@ -221,7 +221,7 @@
               <gmd:phone>
                 <gmd:CI_Telephone>
                   <gmd:voice>
-                    <gco:CharacterString>Telefono dell'organizzazione da contattare per avere informazioni sulla risorsa</gco:CharacterString>
+                    <gco:CharacterString></gco:CharacterString>
                   </gmd:voice>
                 </gmd:CI_Telephone>
               </gmd:phone>
@@ -278,6 +278,50 @@
           </gmd:thesaurusName>
         </gmd:MD_Keywords>
       </gmd:descriptiveKeywords>
+	  <gmd:descriptiveKeywords>
+				<gmd:MD_Keywords>
+					<gmd:keyword>
+						<gco:CharacterString>RNDT</gco:CharacterString>
+					</gmd:keyword>
+					<gmd:keyword>
+						<gco:CharacterString>EU</gco:CharacterString>
+					</gmd:keyword>
+				</gmd:MD_Keywords>
+			</gmd:descriptiveKeywords>
+			<gmd:descriptiveKeywords>
+				<gmd:MD_Keywords>
+					<gmd:keyword>
+						<gco:CharacterString>Regionale</gco:CharacterString>
+					</gmd:keyword>
+					<gmd:type>
+						<gmd:MD_KeywordTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme">theme</gmd:MD_KeywordTypeCode>
+					</gmd:type>
+					<gmd:thesaurusName>
+						<gmd:CI_Citation>
+							<gmd:title>
+								<gco:CharacterString>Spatial scope</gco:CharacterString>
+							</gmd:title>
+							<gmd:date>
+								<gmd:CI_Date>
+									<gmd:date>
+										<gco:Date>2019-05-22</gco:Date>
+									</gmd:date>
+									<gmd:dateType>
+										<gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>
+									</gmd:dateType>
+								</gmd:CI_Date>
+							</gmd:date>
+							<gmd:identifier>
+								<gmd:MD_Identifier>
+									<gmd:code>
+										<gmx:Anchor xlink:href="https://tst-www.geoportale.piemonte.it/geonetwork/srv/api/registries/vocabularies/external.theme.httpinspireeceuropaeumetadatacodelistSpatialScope-SpatialScope">geonetwork.thesaurus.external.theme.httpinspireeceuropaeumetadatacodelistSpatialScope-SpatialScope</gmx:Anchor>
+									</gmd:code>
+								</gmd:MD_Identifier>
+							</gmd:identifier>
+						</gmd:CI_Citation>
+					</gmd:thesaurusName>
+				</gmd:MD_Keywords>
+			</gmd:descriptiveKeywords>
       <!-- VINCOLI SUI DATI -->
       <gmd:resourceConstraints xmlns:srv="http://www.isotc211.org/2005/srv"
                                xmlns:gmx="http://www.isotc211.org/2005/gmx"
@@ -288,7 +332,7 @@
                                     codeListValue="otherRestrictions">otherRestrictions</gmd:MD_RestrictionCode>
           </gmd:accessConstraints>
           <gmd:otherConstraints>
-            <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadatacodelist/LimitationsOnPublicAccess"></gmx:Anchor>
+            <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations">no limitations to public access</gmx:Anchor>
           </gmd:otherConstraints>
         </gmd:MD_LegalConstraints>
       </gmd:resourceConstraints>
@@ -301,7 +345,7 @@
                                     codeListValue="otherRestrictions">otherRestrictions</gmd:MD_RestrictionCode>
           </gmd:useConstraints>
           <gmd:otherConstraints>
-            <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse"></gmx:Anchor>
+            <gco:CharacterString>https://creativecommons.org/licenses/by/4.0/deed.it</gco:CharacterString>
           </gmd:otherConstraints>
         </gmd:MD_LegalConstraints>
       </gmd:resourceConstraints>
@@ -335,29 +379,19 @@
           <gmd:geographicElement>
             <gmd:EX_GeographicBoundingBox>
               <gmd:westBoundLongitude>
-                <gco:Decimal>-180</gco:Decimal>
-              </gmd:westBoundLongitude>
-              <gmd:eastBoundLongitude>
-                <gco:Decimal>180</gco:Decimal>
-              </gmd:eastBoundLongitude>
-              <gmd:southBoundLatitude>
-                <gco:Decimal>-90</gco:Decimal>
-              </gmd:southBoundLatitude>
-              <gmd:northBoundLatitude>
-                <gco:Decimal>90</gco:Decimal>
-              </gmd:northBoundLatitude>
+								<gco:Decimal>6.62</gco:Decimal>
+							</gmd:westBoundLongitude>
+							<gmd:eastBoundLongitude>
+								<gco:Decimal>9.21</gco:Decimal>
+							</gmd:eastBoundLongitude>
+							<gmd:southBoundLatitude>
+								<gco:Decimal>44.06</gco:Decimal>
+							</gmd:southBoundLatitude>
+							<gmd:northBoundLatitude>
+								<gco:Decimal>46.46</gco:Decimal>
+							</gmd:northBoundLatitude>
             </gmd:EX_GeographicBoundingBox>
-          </gmd:geographicElement>
-          <gmd:temporalElement>
-            <gmd:EX_TemporalExtent>
-              <gmd:extent>
-                <gml:TimePeriod gml:id="TP1">
-                  <gml:beginPosition>2009-01-01</gml:beginPosition>
-                  <gml:endPosition>2013-12-31</gml:endPosition>
-                </gml:TimePeriod>
-              </gmd:extent>
-            </gmd:EX_TemporalExtent>
-          </gmd:temporalElement>
+          </gmd:geographicElement>         
           <gmd:verticalElement>
             <gmd:EX_VerticalExtent>
               <gmd:minimumValue>
@@ -372,7 +406,7 @@
         </gmd:EX_Extent>
       </gmd:extent>
       <gmd:supplementalInformation>
-        <gco:CharacterString>http://www.territorio.provincia.tn.it</gco:CharacterString>
+        <gco:CharacterString>eventuali informazioni supplementari</gco:CharacterString>
       </gmd:supplementalInformation>
     </gmd:MD_DataIdentification>
   </gmd:identificationInfo>
@@ -421,7 +455,7 @@
                   <gmd:phone>
                     <gmd:CI_Telephone>
                       <gmd:voice>
-                        <gco:CharacterString>Telefono dell'organizzazione che distribuisce i dati</gco:CharacterString>
+                        <gco:CharacterString></gco:CharacterString>
                       </gmd:voice>
                     </gmd:CI_Telephone>
                   </gmd:phone>
