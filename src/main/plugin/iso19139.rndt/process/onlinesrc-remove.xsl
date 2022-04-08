@@ -28,6 +28,7 @@ Stylesheet used to remove a reference to a online resource.
 <xsl:stylesheet xmlns:geonet="http://www.fao.org/geonetwork" xmlns:gmd="http://www.isotc211.org/2005/gmd"
                 xmlns:gco="http://www.isotc211.org/2005/gco"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                xmlns:gmx="http://www.isotc211.org/2005/gmx"
                 version="2.0">
 
   <xsl:param name="url"/>
@@ -48,6 +49,6 @@ Stylesheet used to remove a reference to a online resource.
     match="geonet:*|gmd:onLine[normalize-space(gmd:CI_OnlineResource/gmd:linkage/gmd:URL) = $url and count(gmd:CI_OnlineResource/gmd:name/gmd:PT_FreeText/gmd:textGroup[gmd:LocalisedCharacterString = $name]) > 0]"
     priority="2"/>
   <xsl:template
-    match="geonet:*|gmd:onLine[normalize-space(gmd:CI_OnlineResource/gmd:linkage/gmd:URL) = $url and normalize-space(gmd:CI_OnlineResource/gmd:protocol/gmx:Anchor/@xlink:hreaf) = 'download']"
+    match="geonet:*|gmd:onLine[normalize-space(gmd:CI_OnlineResource/gmd:linkage/gmd:URL) = $url and normalize-space(gmd:CI_OnlineResource/gmd:protocol/gmx:Anchor) = 'WWW:DOWNLOAD-1.0-http--download']"
     priority="2"/>
 </xsl:stylesheet>
