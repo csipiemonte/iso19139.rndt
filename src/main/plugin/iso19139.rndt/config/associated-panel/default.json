@@ -1,11 +1,10 @@
 {
   "config": {
-    "display": "radio",
     "types": [
       {
         "label": "addOnlinesrc",
         "sources": {
-          "filestore": true
+          "filestore": false
         },
         "icon": "fa gn-icon-onlinesrc",
         "process": "onlinesrc-add",
@@ -44,8 +43,8 @@
       {
         "label": "addThumbnail",
         "sources": {
-          "filestore": true,
-          "thumbnailMaker": true
+          "filestore": false,
+          "thumbnailMaker": false
         },
         "icon": "fa gn-icon-thumbnail",
         "fileStoreFilter": "*.{jpg,JPG,jpeg,JPEG,png,PNG,gif,GIF}",
