@@ -65,6 +65,7 @@
     "multilingualFields": [
       "name",
       "desc"
-    ]
+    ],
+    "rndt": true
   }
 }
