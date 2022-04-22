@@ -341,6 +341,34 @@
       <xsl:apply-templates select="gmd:ISSN"/>
     </xsl:copy>
   </xsl:template>
+
+<!-- Modifica CSI [ND]: Aggiornamento URL risorse PNG -->
+    <xsl:template match="gmd:identificationInfo/gmd:MD_DataIdentification/gmd:graphicOverview" priority="10">
+
+        <xsl:message>=======================================</xsl:message>
+        <xsl:message>||| Processing now graphicOverviews |||</xsl:message>
+        <xsl:variable name="originalUrl" select="gmd:MD_BrowseGraphic/gmd:fileName/gco:CharacterString/text()"/>
+        <xsl:message>||| Processing Original Url: <xsl:value-of select="$originalUrl"/></xsl:message>
+        <xsl:variable name="urlPrefix" select="substring-before($originalUrl, 'records/')"/>
+        <xsl:variable name="thumb_fileName" select="substring-after($originalUrl, 'attachments/')"/>
+        <xsl:variable name="thumb_newUrl" select="concat($urlPrefix,'records/',//gmd:fileIdentifier/gco:CharacterString, '/attachments/', $thumb_fileName)"/>
+        <xsl:message>||| Updated Url is: <xsl:value-of select="$thumb_newUrl"/></xsl:message>
+        <gmd:graphicOverview>
+            <gmd:MD_BrowseGraphic>
+                <gmd:fileName>
+                    <gco:CharacterString>
+                        <xsl:value-of select="$thumb_newUrl"/>
+                    </gco:CharacterString>
+                </gmd:fileName>
+
+                <xsl:apply-templates select="gmd:MD_BrowseGraphic/gmd:fileDescription|gmd:MD_BrowseGraphic/gmd:fileType"/>
+            </gmd:MD_BrowseGraphic>
+        </gmd:graphicOverview>
+        <xsl:message>||| Completed graphicOverview Processing |||</xsl:message>
+        <xsl:message>============================================</xsl:message>
+    </xsl:template>
+
+
 <!--Modifica CSI: Distinto comportamento dei servizi che non devono avere il tag gmd:series-->
 <xsl:template match="gmd:identificationInfo/srv:SV_ServiceIdentification/gmd:citation/gmd:CI_Citation" priority="10">
     <xsl:copy>
