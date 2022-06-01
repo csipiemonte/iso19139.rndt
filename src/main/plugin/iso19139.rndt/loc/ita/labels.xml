@@ -1246,17 +1246,26 @@
     </helper>
   </element>
 
-  <element name="gmd:protocol">
+  <element name="gmd:protocol" id="398.0" alias="protocol">
     <label>Protocollo</label>
     <description>Protocollo di connessione utilizzato</description>
-    <helper relAtt="xlink:href">
-      <option show="y" value="Atom-Powered Robots Run Amok" title="http://www.w3.org/2005/Atom" >Atom Syndication Format</option>
-      <option show="y" value="OGC:WFS" title="http://www.opengis.net/def/serviceType/ogc/wfs">OGC-WFS Web Feature Service</option>
-      <option show="y" value="OGC:CSW" title="http://www.opengis.net/def/serviceType/ogc/csw">OGC-CSW Catalogue Service for the Web</option>
-      <option show="y" value="OGC:WCS" title="http://www.opengis.net/def/serviceType/ogc/wcs">OGC-WCS Web Coverage Service</option>
-      <option show="y" value="OGC:WMS" title="http://www.opengis.net/def/serviceType/ogc/wms">OGC-WMS Web Map Service</option>
-      <option show="y" value="OGC:WMTS" title="http://www.opengis.net/def/serviceType/ogc/wmts">OGC-WMTS Web Map Tile Service</option>
-      <option show="y" value="OGC:SOS" title="http://www.opengis.net/def/serviceType/ogc/sos">OGC-SOS Sensor Observation Service</option>
+    <helper>
+      <option show="y" value="Catalogue Service for the Web (CSW)">Catalogue Service for the Web (CSW)
+      </option>
+      <option show="y" value="Sensor Observation Service (SOS)">Sensor Observation Service (SOS)
+      </option>
+      <option show="y" value="Web Coverage Service (WCS)">Web Coverage Service (WCS)
+      </option>
+      <option show="y" value="Web Feature Service (WFS)">Web Feature Service (WFS)
+      </option>
+      <option show="y" value="Web Map Service (WMS)">Web Map Service (WMS)
+      </option>
+      <option show="y" value="Web Map Tile Service (WMTS)">Web Map Tile Service (WMTS)
+      </option>
+      <option show="y" value="ATOM">ATOM
+      </option>
+      <option show="y" value="WWW:DOWNLOAD-1.0-http--download">WWW:DOWNLOAD-1.0-http--download</option>
+      <option show="y" value="WWW:LINK-1.0-http--link">WWW:LINK-1.0-http--link</option>
     </helper>
   </element>
 
