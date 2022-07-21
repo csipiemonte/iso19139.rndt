@@ -319,7 +319,7 @@
                    data-ng-if="gnCurrentEdit.geoPublisherConfig"
                    data-config="{{gnCurrentEdit.geoPublisherConfig}}"
                    data-lang="lang"/>
-        <directive data-gn-suggestion-list=""/>        
+        <directive data-gn-suggestion-list=""/>
         <directive data-gn-need-help="user-guide/describing-information/creating-metadata.html"/>
       </sidePanel>
 
@@ -648,13 +648,11 @@
             <section name="freeTextKeywords">
               <!-- Keywords senza thesauri (escluso opendata) -->
               <field xpath="gmd:MD_Metadata/gmd:identificationInfo/*/gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:keyword
-                           [not(../gmd:thesaurusName) and not(./gco:CharacterString='open data')
-                           and not(./gco:CharacterString='opendata')]"
+                           [not(../gmd:thesaurusName) and not(./gco:CharacterString='open data') and not(./gco:CharacterString='opendata')]"
                      name="keyword_libera"
                      del="."
                      if="count(gmd:MD_Metadata/gmd:identificationInfo/*/gmd:descriptiveKeywords/gmd:MD_Keywords/
-                       gmd:keyword[not(../gmd:thesaurusName)])>1"
-              />
+                       gmd:keyword[not(../gmd:thesaurusName)])>1"/>
 
               <field xpath="gmd:MD_Metadata/gmd:identificationInfo/*/gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:keyword
                            [not(../gmd:thesaurusName) and not(./gco:CharacterString='open data') and not(./gco:CharacterString='opendata')]"
@@ -2826,7 +2824,6 @@
               data-variables="gmd:role/gmd:CI_RoleCode/@codeListValue~{role}"/>
           </action>
 
-
           <section name="onlineResource">
             <field name="onlineResource"
                    xpath="/gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions"
@@ -2849,13 +2846,13 @@
                             <gmx:Anchor
                               xlink:href=""/>
                           </gmd:protocol>
-                          <gmd:name>
-                            <gco:CharacterString></gco:CharacterString>
-                          </gmd:name>
                           <gmd:applicationProfile>
                             <gmx:Anchor
                               xlink:href=""/>
                           </gmd:applicationProfile>
+                          <gmd:name>
+                            <gco:CharacterString></gco:CharacterString>
+                          </gmd:name>
                           <gmd:description>
                             <gmx:Anchor xlink:href=""/>
                           </gmd:description>
@@ -4467,13 +4464,12 @@
       <directive data-gn-overview-manager=""/>
       <directive data-gn-onlinesrc-list=""/>
       <directive gn-geo-publisher=""
-                   data-ng-if="gnCurrentEdit.geoPublisherConfig"
-                   data-config="{{gnCurrentEdit.geoPublisherConfig}}"
-                   data-lang="lang"/>
+                 data-ng-if="gnCurrentEdit.geoPublisherConfig"
+                 data-config="{{gnCurrentEdit.geoPublisherConfig}}"
+                 data-lang="lang"/>
       <directive data-gn-suggestion-list=""/>
       <directive data-gn-need-help="user-guide/describing-information/creating-metadata.html"/>
     </sidePanel>
-
 
       <tab id="metadata" default="true">
         <section name="metadata">
@@ -5050,9 +5046,9 @@
         <directive data-gn-overview-manager=""/>
         <directive data-gn-onlinesrc-list=""/>
         <directive gn-geo-publisher=""
-                     data-ng-if="gnCurrentEdit.geoPublisherConfig"
-                     data-config="{{gnCurrentEdit.geoPublisherConfig}}"
-                     data-lang="lang"/>
+                   data-ng-if="gnCurrentEdit.geoPublisherConfig"
+                   data-config="{{gnCurrentEdit.geoPublisherConfig}}"
+                   data-lang="lang"/>
         <directive data-gn-suggestion-list=""/>
         <directive data-gn-need-help="user-guide/describing-information/creating-metadata.html"/>
       </sidePanel>

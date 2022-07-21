@@ -134,10 +134,36 @@ Insert is made in first transferOptions found.
             select="gmd:distributionInfo/gmd:MD_Distribution/gmd:distributionFormat"/>
           <xsl:apply-templates
             select="gmd:distributionInfo/gmd:MD_Distribution/gmd:distributor"/>
-          <xsl:apply-templates
+            <xsl:apply-templates
             select="gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions"/>
+<!--           <gmd:transferOptions>
+            <gmd:MD_DigitalTransferOptions>
+              <xsl:apply-templates
+                select="gmd:distributionInfo/gmd:MD_Distribution/
+                          gmd:transferOptions[1]/gmd:MD_DigitalTransferOptions/gmd:unitsOfDistribution"/>
+              <xsl:apply-templates
+                select="gmd:distributionInfo/gmd:MD_Distribution/
+                          gmd:transferOptions[1]/gmd:MD_DigitalTransferOptions/gmd:transferSize"/>
+              <xsl:apply-templates
+                select="gmd:distributionInfo/gmd:MD_Distribution/
+                          gmd:transferOptions[1]/gmd:MD_DigitalTransferOptions/gmd:onLine"/>
 
-          <xsl:call-template name="createTransferOptions"/>
+
+              <xsl:if test="$updateKey = ''">
+                <xsl:call-template name="createOnlineSrc"/>
+              </xsl:if>
+
+              <xsl:apply-templates
+                select="gmd:distributionInfo/gmd:MD_Distribution/
+                          gmd:transferOptions[1]/gmd:MD_DigitalTransferOptions/gmd:offLine"/>
+            </gmd:MD_DigitalTransferOptions>
+          </gmd:transferOptions> -->
+          <xsl:if test="$updateKey = ''">
+            <xsl:call-template name="createTransferOptions"/>
+          </xsl:if>
+<!--           <xsl:apply-templates
+            select="gmd:distributionInfo/gmd:MD_Distribution/
+                      gmd:transferOptions[position() > 1]"/> -->
 
         </gmd:MD_Distribution>
       </gmd:distributionInfo>
@@ -167,12 +193,11 @@ Insert is made in first transferOptions found.
     <xsl:call-template name="createOnlineSrc"/>
   </xsl:template>
 
+
   <xsl:template name="createTransferOptions">
     <gmd:transferOptions>
       <gmd:MD_DigitalTransferOptions>
-        <xsl:if test="$updateKey = ''">
-          <xsl:call-template name="createOnlineSrc"/>
-        </xsl:if>
+        <xsl:call-template name="createOnlineSrc"/>
       </gmd:MD_DigitalTransferOptions>
     </gmd:transferOptions>
   </xsl:template>
