@@ -313,8 +313,8 @@
 
       <sidePanel>
         <directive data-gn-validation-report=""/>
-        <directive data-gn-overview-manager=""/>
-        <!--<directive data-gn-onlinesrc-list=""/>
+        <!--<directive data-gn-overview-manager=""/>
+        <directive data-gn-onlinesrc-list=""/>
         <directive gn-geo-publisher=""
                    data-ng-if="gnCurrentEdit.geoPublisherConfig"
                    data-config="{{gnCurrentEdit.geoPublisherConfig}}"
@@ -4460,9 +4460,9 @@
 
     <view name="advanced">
     <sidePanel>
-      <directive data-gn-validation-report=""/>
+      <directive data-gn-validation-report=""/><!--
       <directive data-gn-overview-manager=""/>
-      <!--<directive data-gn-onlinesrc-list=""/>
+      <directive data-gn-onlinesrc-list=""/>
       <directive gn-geo-publisher=""
                  data-ng-if="gnCurrentEdit.geoPublisherConfig"
                  data-config="{{gnCurrentEdit.geoPublisherConfig}}"

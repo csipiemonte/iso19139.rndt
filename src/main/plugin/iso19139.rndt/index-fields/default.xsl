@@ -155,10 +155,13 @@
     <xsl:if test="$ipaDefined">
 
       <xsl:variable name="iPA">
-          <xsl:call-template name="substring-before-last">
+        <!--Modifica CSI cambiata logica identificazione IPA-->
+        <xsl:value-of select="substring-before($fileId,':')"/>
+          <!--xsl:call-template name="substring-before-last">
             <xsl:with-param name="string1" select="$fileId"/>
             <xsl:with-param name="string2" select="':'"/>
-          </xsl:call-template>
+          </xsl:call-template-->
+        <!-- FINE modifica CSI-->
       </xsl:variable>
       <Field name="ipa" string="{string($iPA)}" store="false" index="true"/>
       <xsl:variable name="iPAterminator" select="concat('#', $iPA)"/>
