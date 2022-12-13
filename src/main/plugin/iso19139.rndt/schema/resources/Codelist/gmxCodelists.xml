@@ -1149,9 +1149,9 @@
         </CodeDefinition>
       </codeEntry>
       <codeEntry>
-        <CodeDefinition gml:id="MD_MaintenanceFrequencyCode_quartely">
+        <CodeDefinition gml:id="MD_MaintenanceFrequencyCode_quarterly">
           <gml:description>data is updated every three months</gml:description>
-          <gml:identifier codeSpace="ISOTC211/19115">quartely</gml:identifier>
+          <gml:identifier codeSpace="ISOTC211/19115">quarterly</gml:identifier>
         </CodeDefinition>
       </codeEntry>
       <codeEntry>
