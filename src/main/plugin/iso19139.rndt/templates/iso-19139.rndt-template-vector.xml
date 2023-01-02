@@ -14,16 +14,19 @@
 		<gco:CharacterString>template_id_file_vector</gco:CharacterString>
 	</gmd:fileIdentifier>
 	<gmd:language>
-		<gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="ita">ita</gmd:LanguageCode>
+		<gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/"
+		                  codeListValue="ita">ita</gmd:LanguageCode>
 	</gmd:language>
 	<gmd:characterSet>
-		<gmd:MD_CharacterSetCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#MD_CharacterSetCod e" codeListValue="utf8">utf8</gmd:MD_CharacterSetCode>
+		<gmd:MD_CharacterSetCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#MD_CharacterSetCod e"
+		                         codeListValue="utf8">utf8</gmd:MD_CharacterSetCode>
 	</gmd:characterSet>
 	<!--	<gmd:parentIdentifier>
    <gco:CharacterString>cod_ipa:id_file</gco:CharacterString>
  </gmd:parentIdentifier>-->
 	<gmd:hierarchyLevel>
-		<gmd:MD_ScopeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset">dataset</gmd:MD_ScopeCode>
+		<gmd:MD_ScopeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#MD_ScopeCode"
+		                  codeListValue="dataset">dataset</gmd:MD_ScopeCode>
 	</gmd:hierarchyLevel>
 	<gmd:contact>
 		<gmd:CI_ResponsibleParty>
@@ -35,7 +38,7 @@
 					<gmd:phone>
 						<gmd:CI_Telephone>
 							<gmd:voice>
-								<gco:CharacterString></gco:CharacterString>
+								<gco:CharacterString/>
 							</gmd:voice>
 						</gmd:CI_Telephone>
 					</gmd:phone>
@@ -56,7 +59,8 @@
 				</gmd:CI_Contact>
 			</gmd:contactInfo>
 			<gmd:role>
-				<gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#MD_RoleCode" codeListValue="pointOfContact">punto di contatto</gmd:CI_RoleCode>
+				<gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#MD_RoleCode"
+				                 codeListValue="pointOfContact">punto di contatto</gmd:CI_RoleCode>
 			</gmd:role>
 		</gmd:CI_ResponsibleParty>
 	</gmd:contact>
@@ -74,7 +78,7 @@
 			<gmd:referenceSystemIdentifier>
 				<gmd:RS_Identifier>
 					<gmd:code>
-						<gmx:Anchor xlink:href="http://www.opengis.net/def/crs/EPSG/0/3035">ETRS89-LAEA</gmx:Anchor>
+						<gmx:Anchor xlink:href="http://www.opengis.net/def/crs/EPSG/0/32632">WGS84/UTM 32N</gmx:Anchor>
 					</gmd:code>
 				</gmd:RS_Identifier>
 			</gmd:referenceSystemIdentifier>
@@ -94,7 +98,8 @@
 								<gco:Date>2013-01-01</gco:Date>
 							</gmd:date>
 							<gmd:dateType>
-								<gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="creation">creation</gmd:CI_DateTypeCode>
+								<gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#CI_DateTypeCode"
+								                     codeListValue="creation">creation</gmd:CI_DateTypeCode>
 							</gmd:dateType>
 						</gmd:CI_Date>
 					</gmd:date>
@@ -115,7 +120,7 @@
 									<gmd:phone>
 										<gmd:CI_Telephone>
 											<gmd:voice>
-												<gco:CharacterString></gco:CharacterString>
+												<gco:CharacterString/>
 											</gmd:voice>
 										</gmd:CI_Telephone>
 									</gmd:phone>
@@ -137,13 +142,15 @@
 							</gmd:contactInfo>
 							<!-- Il ruolo deve corrispondere a uno dei valori della lista "CI_RoleCode" (§3.4.3.3 - all. 2 DM), tranne "punto di contatto"(pointOfContact) e "distributore"(distributor) -->
 							<gmd:role>
-								<gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#MD_RoleCode" codeListValue="owner">Proprietario</gmd:CI_RoleCode>
+								<gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#MD_RoleCode"
+								                 codeListValue="owner">Proprietario</gmd:CI_RoleCode>
 							</gmd:role>
 						</gmd:CI_ResponsibleParty>
 					</gmd:citedResponsibleParty>
 					<!-- Il formato di presentazione deve corrispondere a uno dei valori della lista"CI_PresentationFormCode" (§ 3.4.3.2 - all. 2 DM) -->
 					<gmd:presentationForm>
-						<gmd:CI_PresentationFormCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#CI_PresentationFormC ode" codeListValue="mapDigital">mapDigital</gmd:CI_PresentationFormCode>
+						<gmd:CI_PresentationFormCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#CI_PresentationFormC ode"
+						                             codeListValue="mapDigital">mapDigital</gmd:CI_PresentationFormCode>
 					</gmd:presentationForm>
 					<!--Per serie e per dataset che non hanno un livello gerarchico superiore l'elemento deve assumere lo stesso valore dell'elemento <gmd:RS_Identifier> -->
 					<gmd:series>
@@ -171,7 +178,7 @@
 							<gmd:phone>
 								<gmd:CI_Telephone>
 									<gmd:voice>
-										<gco:CharacterString></gco:CharacterString>
+										<gco:CharacterString/>
 									</gmd:voice>
 								</gmd:CI_Telephone>
 							</gmd:phone>
@@ -192,14 +199,16 @@
 						</gmd:CI_Contact>
 					</gmd:contactInfo>
 					<gmd:role>
-						<gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#MD_RoleCode" codeListValue="pointOfContact">punto di contatto</gmd:CI_RoleCode>
+						<gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#MD_RoleCode"
+						                 codeListValue="pointOfContact">punto di contatto</gmd:CI_RoleCode>
 					</gmd:role>
 				</gmd:CI_ResponsibleParty>
 			</gmd:pointOfContact>
 			<gmd:resourceMaintenance>
 				<gmd:MD_MaintenanceInformation>
 					<gmd:maintenanceAndUpdateFrequency>
-						<gmd:MD_MaintenanceFrequencyCode codeListValue="asNeeded" codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmxCodelists.xml#MD_MaintenanceFrequencyCode" />
+						<gmd:MD_MaintenanceFrequencyCode codeListValue="asNeeded"
+						                                 codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmxCodelists.xml#MD_MaintenanceFrequencyCode"/>
 					</gmd:maintenanceAndUpdateFrequency>
 				</gmd:MD_MaintenanceInformation>
 			</gmd:resourceMaintenance>
@@ -220,7 +229,8 @@
 										<gco:Date>2008-06-01</gco:Date>
 									</gmd:date>
 									<gmd:dateType>
-										<gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">pubblicazione</gmd:CI_DateTypeCode>
+										<gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#CI_DateTypeCode"
+										                     codeListValue="publication">pubblicazione</gmd:CI_DateTypeCode>
 									</gmd:dateType>
 								</gmd:CI_Date>
 							</gmd:date>
@@ -244,7 +254,8 @@
 						<gco:CharacterString>Regionale</gco:CharacterString>
 					</gmd:keyword>
 					<gmd:type>
-						<gmd:MD_KeywordTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme">theme</gmd:MD_KeywordTypeCode>
+						<gmd:MD_KeywordTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmxCodelists.xml#MD_KeywordTypeCode"
+						                        codeListValue="theme">theme</gmd:MD_KeywordTypeCode>
 					</gmd:type>
 					<gmd:thesaurusName>
 						<gmd:CI_Citation>
@@ -257,7 +268,8 @@
 										<gco:Date>2019-05-22</gco:Date>
 									</gmd:date>
 									<gmd:dateType>
-										<gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>
+										<gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode"
+										                     codeListValue="publication">publication</gmd:CI_DateTypeCode>
 									</gmd:dateType>
 								</gmd:CI_Date>
 							</gmd:date>
@@ -274,25 +286,25 @@
 			</gmd:descriptiveKeywords>
 			<!-- VINCOLI SUI DATI -->
 			<gmd:resourceConstraints xmlns:srv="http://www.isotc211.org/2005/srv"
-                               xmlns:gmx="http://www.isotc211.org/2005/gmx"
-                               xmlns:gml="http://www.opengis.net/gml/3.2">
+			                         xmlns:gmx="http://www.isotc211.org/2005/gmx"
+			                         xmlns:gml="http://www.opengis.net/gml/3.2">
 				<gmd:MD_LegalConstraints>
 					<gmd:accessConstraints>
 						<gmd:MD_RestrictionCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmxCodelists.xml#MD_RestrictionCode"
-                                    codeListValue="otherRestrictions">otherRestrictions</gmd:MD_RestrictionCode>
+						                        codeListValue="otherRestrictions">otherRestrictions</gmd:MD_RestrictionCode>
 					</gmd:accessConstraints>
 					<gmd:otherConstraints>
-                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations">no limitations to public access</gmx:Anchor>
-               </gmd:otherConstraints>
+						<gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations">no limitations to public access</gmx:Anchor>
+					</gmd:otherConstraints>
 				</gmd:MD_LegalConstraints>
 			</gmd:resourceConstraints>
 			<gmd:resourceConstraints xmlns:srv="http://www.isotc211.org/2005/srv"
-                               xmlns:gmx="http://www.isotc211.org/2005/gmx"
-                               xmlns:gml="http://www.opengis.net/gml/3.2">
+			                         xmlns:gmx="http://www.isotc211.org/2005/gmx"
+			                         xmlns:gml="http://www.opengis.net/gml/3.2">
 				<gmd:MD_LegalConstraints>
 					<gmd:useConstraints>
 						<gmd:MD_RestrictionCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmxCodelists.xml#MD_RestrictionCode"
-                                    codeListValue="otherRestrictions">otherRestrictions</gmd:MD_RestrictionCode>
+						                        codeListValue="otherRestrictions">otherRestrictions</gmd:MD_RestrictionCode>
 					</gmd:useConstraints>
 					<gmd:otherConstraints>
 						<gco:CharacterString>https://creativecommons.org/licenses/by/4.0/deed.it</gco:CharacterString>
@@ -301,7 +313,8 @@
 			</gmd:resourceConstraints>
 			<!-- Il tipo di rappresentazione spaziale deve corrispondere a uno dei valori della lista "CI_SpatialRepresentationTypeCode" (§ 3.4.3.14 - all. 2 DM) -->
 			<gmd:spatialRepresentationType>
-				<gmd:MD_SpatialRepresentationTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#MD_SpatialRepresent ationTypeCode" codeListValue="vector">dati vettoriali</gmd:MD_SpatialRepresentationTypeCode>
+				<gmd:MD_SpatialRepresentationTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#MD_SpatialRepresent ationTypeCode"
+				                                      codeListValue="vector">dati vettoriali</gmd:MD_SpatialRepresentationTypeCode>
 			</gmd:spatialRepresentationType>
 			<gmd:spatialResolution>
 				<gmd:MD_Resolution>
@@ -315,10 +328,12 @@
 				</gmd:MD_Resolution>
 			</gmd:spatialResolution>
 			<gmd:language>
-				<gmd:LanguageCode codeList=" http://www.loc.gov/standards/iso639-2" codeListValue="ita">ita</gmd:LanguageCode>
+				<gmd:LanguageCode codeList=" http://www.loc.gov/standards/iso639-2"
+				                  codeListValue="ita">ita</gmd:LanguageCode>
 			</gmd:language>
 			<gmd:characterSet>
-				<gmd:MD_CharacterSetCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#MD_CharacterSetCod e" codeListValue="utf8">utf8</gmd:MD_CharacterSetCode>
+				<gmd:MD_CharacterSetCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#MD_CharacterSetCod e"
+				                         codeListValue="utf8">utf8</gmd:MD_CharacterSetCode>
 			</gmd:characterSet>
 			<!-- La categoria tematica deve corrispondere a uno dei valori della lista "MD_TopicCategoryCode" (§ 3.4.3.15 – all. 2 DM) -->
 			<gmd:topicCategory>
@@ -373,7 +388,7 @@
 									<gmd:phone>
 										<gmd:CI_Telephone>
 											<gmd:voice>
-												<gco:CharacterString></gco:CharacterString>
+												<gco:CharacterString/>
 											</gmd:voice>
 										</gmd:CI_Telephone>
 									</gmd:phone>
@@ -394,7 +409,8 @@
 								</gmd:CI_Contact>
 							</gmd:contactInfo>
 							<gmd:role>
-								<gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="distributor">distributore</gmd:CI_RoleCode>
+								<gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#CI_RoleCode"
+								                 codeListValue="distributor">distributore</gmd:CI_RoleCode>
 							</gmd:role>
 						</gmd:CI_ResponsibleParty>
 					</gmd:distributorContact>
@@ -408,7 +424,8 @@
 			<gmd:scope>
 				<gmd:DQ_Scope>
 					<gmd:level>
-						<gmd:MD_ScopeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#CI_ScopeCode" codeListValue="dataset">dataset</gmd:MD_ScopeCode>
+						<gmd:MD_ScopeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#CI_ScopeCode"
+						                  codeListValue="dataset">dataset</gmd:MD_ScopeCode>
 					</gmd:level>
 				</gmd:DQ_Scope>
 			</gmd:scope>
@@ -419,7 +436,7 @@
 							<gmd:valueUnit>
 								<gml:BaseUnit gml:id="UD1">
 									<gml:identifier codeSpace="http://www.bipm.org/en/si/base_units">m</gml:identifier>
-									<gml:unitsSystem xlink:href="http://www.bipm.org/en/si" />
+									<gml:unitsSystem xlink:href="http://www.bipm.org/en/si"/>
 								</gml:BaseUnit>
 							</gmd:valueUnit>
 							<gmd:value>
@@ -446,7 +463,8 @@
 												<gco:Date>2010-12-08</gco:Date>
 											</gmd:date>
 											<gmd:dateType>
-												<gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">Pubblicazione</gmd:CI_DateTypeCode>
+												<gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#CI_DateTypeCode"
+												                     codeListValue="publication">Pubblicazione</gmd:CI_DateTypeCode>
 											</gmd:dateType>
 										</gmd:CI_Date>
 									</gmd:date>
@@ -455,7 +473,7 @@
 							<gmd:explanation>
 								<gco:CharacterString>non valutato</gco:CharacterString>
 							</gmd:explanation>
-							<gmd:pass gco:nilReason="unknown" />
+							<gmd:pass gco:nilReason="unknown"/>
 						</gmd:DQ_ConformanceResult>
 					</gmd:result>
 				</gmd:DQ_DomainConsistency>
