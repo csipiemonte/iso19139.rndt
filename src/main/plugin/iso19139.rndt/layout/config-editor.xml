@@ -2848,13 +2848,13 @@
                             <gmx:Anchor
                               xlink:href=""/>
                           </gmd:protocol>
-                          <gmd:name>
-                            <gco:CharacterString></gco:CharacterString>
-                          </gmd:name>
                           <gmd:applicationProfile>
                             <gmx:Anchor
                               xlink:href=""/>
                           </gmd:applicationProfile>
+                          <gmd:name>
+                            <gco:CharacterString></gco:CharacterString>
+                          </gmd:name>
                           <gmd:description>
                             <gmx:Anchor xlink:href=""/>
                           </gmd:description>
