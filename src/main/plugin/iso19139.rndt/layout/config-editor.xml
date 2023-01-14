@@ -2852,7 +2852,7 @@
                             <gmx:Anchor
                               xlink:href=""/>
                           </gmd:applicationProfile>
-                          <gmd:name>
+						  <gmd:name>
                             <gco:CharacterString></gco:CharacterString>
                           </gmd:name>
                           <gmd:description>
@@ -3067,7 +3067,7 @@
               </values>
               <snippet>
                 <srv:serviceType>
-                  <gco:LocalName codeSpace="http://inspire.ec.europa.eu/metadatacodelist/SpatialDataServiceType">
+                  <gco:LocalName codeSpace="http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType">
                     {{serviceType}}
                   </gco:LocalName>
                 </srv:serviceType>
@@ -3256,7 +3256,7 @@
                           <gco:CharacterString/>
                         </gmd:name>
                         <gmd:description>
-                          <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadatacodelist/OnLineDescriptionCode/accessPoint">access point</gmx:Anchor>
+                          <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">access point</gmx:Anchor>
                         </gmd:description>
                         <gmd:function>
                           <gmd:CI_OnLineFunctionCode
@@ -3294,7 +3294,7 @@
                               <gco:CharacterString/>
                             </gmd:name>
                             <gmd:description>
-                              <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadatacodelist/OnLineDescriptionCode/accessPoint">access point</gmx:Anchor>
+                              <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">access point</gmx:Anchor>
                             </gmd:description>
                             <gmd:function>
                               <gmd:CI_OnLineFunctionCode

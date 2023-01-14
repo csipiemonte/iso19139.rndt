@@ -800,6 +800,10 @@
 
   <codelist name="serviceType">
     <entry>
+      <code>discovery</code>
+      <label>Servizio di ricerca (discovery)</label>
+    </entry>
+	<entry>
       <code>view</code>
       <label>Servizio di consultazione (view)</label>
     </entry>

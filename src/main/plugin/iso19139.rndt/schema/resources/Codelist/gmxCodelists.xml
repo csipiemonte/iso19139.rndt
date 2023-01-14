@@ -1540,7 +1540,9 @@
       <gml:description>class of information to which the referencing entity applies
       </gml:description>
       <gml:identifier codeSpace="ISOTC211/19115">MD_ScopeCode</gml:identifier>
-      <codeEntry>
+      <!-- COMMENTATO MD 05/01/23 - issue nr. 29 -->
+	  <!--
+	  <codeEntry>
         <CodeDefinition gml:id="MD_ScopeCode_attribute">
           <gml:description>information applies to the attribute class</gml:description>
           <gml:identifier codeSpace="ISOTC211/19115">attribute</gml:identifier>
@@ -1564,6 +1566,7 @@
           <gml:identifier codeSpace="ISOTC211/19115">collectionSession</gml:identifier>
         </CodeDefinition>
       </codeEntry>
+	  -->
       <codeEntry>
         <CodeDefinition gml:id="MD_ScopeCode_dataset">
           <gml:description>information applies to the dataset</gml:description>
@@ -1576,6 +1579,8 @@
           <gml:identifier codeSpace="ISOTC211/19115">series</gml:identifier>
         </CodeDefinition>
       </codeEntry>
+	  <!-- COMMENTATO MD 05/01/23 - issue nr. 29 -->
+	  <!--
       <codeEntry>
         <CodeDefinition gml:id="MD_ScopeCode_nonGeographicDataset">
           <gml:description>information applies to non-geographic data</gml:description>
@@ -1642,6 +1647,7 @@
           <gml:identifier codeSpace="ISOTC211/19115">tile</gml:identifier>
         </CodeDefinition>
       </codeEntry>
+	  -->
     </CodeListDictionary>
   </codelistItem>
   <!--=== MD_SpatialRepresentationTypeCode ===-->
