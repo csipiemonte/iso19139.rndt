@@ -313,14 +313,14 @@
 
       <sidePanel>
         <directive data-gn-validation-report=""/>
-        <!--BEGIN CSI: DISABILITARE IN PRODUZIONE-->
         <directive data-gn-overview-manager=""/>
-        <directive data-gn-onlinesrc-list=""/>
+        <!--BEGIN CSI: DISABILITARE IN PRODUZIONE-->
+        <!--<directive data-gn-onlinesrc-list=""/>
         <directive gn-geo-publisher=""
                    data-ng-if="gnCurrentEdit.geoPublisherConfig"
                    data-config="{{gnCurrentEdit.geoPublisherConfig}}"
                    data-lang="lang"/>
-        <directive data-gn-suggestion-list=""/>
+        <directive data-gn-suggestion-list=""/>-->
         <!--END CSI: DISABILITARE IN PRODUZIONE-->
         <directive data-gn-need-help="user-guide/describing-information/creating-metadata.html"/>
       </sidePanel>
@@ -4465,12 +4465,12 @@
       <directive data-gn-validation-report=""/>
       <!--BEGIN CSI: DISABILITARE IN PRODUZIONE-->
       <directive data-gn-overview-manager=""/>
-      <directive data-gn-onlinesrc-list=""/>
+      <!--<directive data-gn-onlinesrc-list=""/>
       <directive gn-geo-publisher=""
                  data-ng-if="gnCurrentEdit.geoPublisherConfig"
                  data-config="{{gnCurrentEdit.geoPublisherConfig}}"
                  data-lang="lang"/>
-      <directive data-gn-suggestion-list=""/>
+      <directive data-gn-suggestion-list=""/>-->
       <!--END CSI: DISABILITARE IN PRODUZIONE-->
       <directive data-gn-need-help="user-guide/describing-information/creating-metadata.html"/>
     </sidePanel>
@@ -5049,12 +5049,12 @@
         <directive data-gn-validation-report=""/>
         <directive data-gn-overview-manager=""/>
         <!--BEGIN CSI: DISABILITARE IN PRODUZIONE (in questa sez. rimane abilitato overview manager)-->
-        <directive data-gn-onlinesrc-list=""/>
+        <!--<directive data-gn-onlinesrc-list=""/>
         <directive gn-geo-publisher=""
                    data-ng-if="gnCurrentEdit.geoPublisherConfig"
                    data-config="{{gnCurrentEdit.geoPublisherConfig}}"
                    data-lang="lang"/>
-        <directive data-gn-suggestion-list=""/>
+        <directive data-gn-suggestion-list=""/>-->
         <!--BEGIN CSI: DISABILITARE IN PRODUZIONE-->
         <directive data-gn-need-help="user-guide/describing-information/creating-metadata.html"/>
       </sidePanel>
