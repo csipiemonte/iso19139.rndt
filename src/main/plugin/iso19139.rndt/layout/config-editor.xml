@@ -5056,7 +5056,6 @@
                    data-lang="lang"/>
         <directive data-gn-suggestion-list=""/>
         <!--BEGIN CSI: DISABILITARE IN PRODUZIONE-->
-        <directive data-gn-need-help="user-guide/describing-information/creating-metadata.html"/>
       </sidePanel>
       <tab id="xml" default="true"/>
     </view>
