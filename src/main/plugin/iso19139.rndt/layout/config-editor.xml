@@ -322,7 +322,6 @@
                    data-lang="lang"/>
         <directive data-gn-suggestion-list=""/>
         <!--END CSI: DISABILITARE IN PRODUZIONE-->
-        <directive data-gn-need-help="user-guide/describing-information/creating-metadata.html"/>
       </sidePanel>
 
       <tab id="default" default="true" mode="flat">
@@ -4472,7 +4471,6 @@
                  data-lang="lang"/>
       <directive data-gn-suggestion-list=""/>
       <!--END CSI: DISABILITARE IN PRODUZIONE-->
-      <directive data-gn-need-help="user-guide/describing-information/creating-metadata.html"/>
     </sidePanel>
 
       <tab id="metadata" default="true">
