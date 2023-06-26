@@ -1,6 +1,5 @@
 # iso19139.rndt
 
-
 GeoNetwork Italian RNDT metadata pluggable schema for version 3.10.x.
 
 - Home site:
