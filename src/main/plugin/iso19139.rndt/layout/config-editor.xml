@@ -1004,7 +1004,7 @@
               </action>
 
             </section>
-
+            <!--BEGIN https://gitlab.csi.it/prodotti/gaas/geonetworkextpie/-/issues/14 NASCONDERE ESTENSIONE TEMPORALE>
             <section name="temporalSection">
               <field
                      xpath="/gmd:MD_Metadata/gmd:identificationInfo/*/gmd:extent/gmd:EX_Extent/gmd:temporalElement"
@@ -1078,6 +1078,7 @@
                 </template>
               </action>
             </section>
+            <END https://gitlab.csi.it/prodotti/gaas/geonetworkextpie/-/issues/14 NASCONDERE ESTENSIONE TEMPORALE-->
           </section>
         </section>
       </tab>
