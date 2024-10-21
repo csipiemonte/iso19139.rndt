@@ -314,13 +314,12 @@
       <sidePanel>
         <directive data-gn-validation-report=""/>
         <directive data-gn-overview-manager=""/>
-        <!--BEGIN CSI: DISABILITARE IN PRODUZIONE PER REGP e CMTO -->
         <directive data-gn-onlinesrc-list=""/>
         <directive gn-geo-publisher=""
                    data-ng-if="gnCurrentEdit.geoPublisherConfig"
                    data-config="{{gnCurrentEdit.geoPublisherConfig}}"
                    data-lang="lang"/>
-        <!--BEGIN CSI: DISABILITARE IN PRODUZIONE PER VICENZA -->
+        <!--BEGIN CSI: DISABILITARE IN PRODUZIONE PER Tutti i Portali-->
         <directive data-gn-suggestion-list=""/>
         <!--END CSI: DISABILITARE IN PRODUZIONE-->
         <!--URL SCORRETTO directive data-gn-need-help="user-guide/describing-information/creating-metadata.html"/-->
@@ -4480,13 +4479,12 @@
     <sidePanel>
       <directive data-gn-validation-report=""/>
       <directive data-gn-overview-manager=""/>
-      <!--BEGIN CSI: DISABILITARE IN PRODUZIONE per REGP e CMTO-->
       <directive data-gn-onlinesrc-list=""/>
       <directive gn-geo-publisher=""
                  data-ng-if="gnCurrentEdit.geoPublisherConfig"
                  data-config="{{gnCurrentEdit.geoPublisherConfig}}"
                  data-lang="lang"/>
-      <!--BEGIN CSI: DISABILITARE IN PRODUZIONE PER VICENZA -->
+      <!--BEGIN CSI: DISABILITARE IN PRODUZIONE PER tutti i portali-->
       <directive data-gn-suggestion-list=""/>
       <!--END CSI: DISABILITARE IN PRODUZIONE-->
       <!--URL SCORRETTO directive data-gn-need-help="user-guide/describing-information/creating-metadata.html"/-->
@@ -5065,13 +5063,12 @@
       <sidePanel>
         <directive data-gn-validation-report=""/>
         <directive data-gn-overview-manager=""/>
-        <!--BEGIN CSI: DISABILITARE IN PRODUZIONE per REGP e CMTO -->
         <directive data-gn-onlinesrc-list=""/>
         <directive gn-geo-publisher=""
                    data-ng-if="gnCurrentEdit.geoPublisherConfig"
                    data-config="{{gnCurrentEdit.geoPublisherConfig}}"
                    data-lang="lang"/>
-      <!--BEGIN CSI: DISABILITARE IN PRODUZIONE PER VICENZA -->
+      <!--BEGIN CSI: DISABILITARE IN PRODUZIONE PER Tutti i portali -->
         <directive data-gn-suggestion-list=""/>
         <!--BEGIN CSI: DISABILITARE IN PRODUZIONE-->
         <!--URL SCORRETTO directive data-gn-need-help="user-guide/describing-information/creating-metadata.html"/-->
