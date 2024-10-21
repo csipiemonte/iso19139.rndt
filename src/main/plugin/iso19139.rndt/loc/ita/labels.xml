@@ -378,22 +378,31 @@
     <help>Nome del formato dei dati</help>
     <condition>obbligatorio</condition>
     <helper rel="gmd:version">
-      <option value="Text">Testo</option>
-      <option value="ESRI Shapefile" title="1.0">ESRI Shapefile</option>
-      <option value="Mapinfo MIF/MID" title="4.5">Mapinfo MIF/MID</option>
-      <option value="Mapinfo TAB">Mapinfo TAB</option>
-      <option value="KML">KML</option>
-      <option value="GML" title="3.2.1">GML</option>
-      <option value="GeoTIFF" title="1.0">GeoTIFF</option>
-      <option value="TIFF">TIFF</option>
-      <option value="ECW">ECW</option>
-      <option value="JPEG2000">JPEG2000</option>
-      <option value="ZIP">ZIP</option>
-      <option value="PDF">PDF</option>
-      <option value="PNG">PNG</option>
-      <option value="JPEG">JPEG</option>
-      <option value="OGC:WMC">OGC:WMC</option>
-      <option value="OGC:OWS Context">OGC:OWS Context</option>
+        <!-- Protocolli di rete -->
+		    <option value="OGC:WMS" title="1.3.0">OGC:WMS</option>
+        <option value="OGC:WMTS" title="1.0.0">OGC:WMTS</option>
+        <option value="OGC:WFS" title="2.0.0">OGC:WFS</option>
+        <option value="OGC:WCS" title="1.1.0">OGC:WCS</option>
+        <option value="OGC:API Features" title="1.0.1">OGC:API Features</option>
+        <option value="Vector tiles" title="N.A.">Vector Tiles</option>
+        <!-- File geografici (vettori) -->
+        <option value="OGC:GeoPackage" title="1.4.0">GeoPackage</option>
+        <option value="ESRI Shapefile" title="N.A.">ESRI Shapefile</option>
+        <option value="OGC:KML" title="2.3">KML</option>
+        <option value="OGC:GeoJSON" title="N.A.">GeoJSON</option>
+        <option value="OGC:GML" title="3.3">GML</option>
+        <option value="DXF" title="N.A.">AutoCAD DXF</option>
+        <!-- File geografici (raster) -->
+        <option value="GeoTIFF" title="N.A.">GeoTIFF</option>
+        <option value="TIFF" title="N.A.">TIFF</option>
+        <option value="ECW" title="N.A.">ECW</option>
+        <option value="JPEG2000" title="N.A.">JPEG2000</option>
+        <option value="JPEG" title="N.A.">JPEG/JPG</option>
+        <option value="PNG" title="N.A.">PNG</option>
+        <!-- Altri file utilizzati -->
+        <option value="ZIP" title="N.A.">File ZIP</option>
+        <option value="PDF" title="N.A.">PDF</option>
+        <option value="Text" title="N.A.">File di testo (TXT, CSV, ...)</option>
     </helper>
   </element>
 
