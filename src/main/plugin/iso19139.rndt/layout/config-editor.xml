@@ -319,8 +319,8 @@
                    data-ng-if="gnCurrentEdit.geoPublisherConfig"
                    data-config="{{gnCurrentEdit.geoPublisherConfig}}"
                    data-lang="lang"/>
-        <!--BEGIN CSI: DISABILITARE IN PRODUZIONE (per tutti i portali)-->
-        <directive data-gn-suggestion-list=""/>
+        <!--BEGIN CSI: DISABILITARE IN PRODUZIONE (per tutti i portali)
+        <directive data-gn-suggestion-list=""/>-->
         <!--END CSI: DISABILITARE IN PRODUZIONE-->
         <!--URL SCORRETTO directive data-gn-need-help="user-guide/describing-information/creating-metadata.html"/-->
       </sidePanel>
@@ -4484,8 +4484,8 @@
                  data-ng-if="gnCurrentEdit.geoPublisherConfig"
                  data-config="{{gnCurrentEdit.geoPublisherConfig}}"
                  data-lang="lang"/>
-      <!--BEGIN CSI: DISABILITARE IN PRODUZIONE (per tutti i portali)-->
-      <directive data-gn-suggestion-list=""/>
+      <!--BEGIN CSI: DISABILITARE IN PRODUZIONE (per tutti i portali)
+      <directive data-gn-suggestion-list=""/>-->
       <!--END CSI: DISABILITARE IN PRODUZIONE-->
       <!--URL SCORRETTO directive data-gn-need-help="user-guide/describing-information/creating-metadata.html"/-->
     </sidePanel>
@@ -5068,8 +5068,8 @@
                    data-ng-if="gnCurrentEdit.geoPublisherConfig"
                    data-config="{{gnCurrentEdit.geoPublisherConfig}}"
                    data-lang="lang"/>
-        <!--BEGIN CSI: DISABILITARE IN PRODUZIONE (per tutti i portali)-->
-        <directive data-gn-suggestion-list=""/>
+        <!--BEGIN CSI: DISABILITARE IN PRODUZIONE (per tutti i portali)
+        <directive data-gn-suggestion-list=""/>-->
         <!--BEGIN CSI: DISABILITARE IN PRODUZIONE-->
         <!--URL SCORRETTO directive data-gn-need-help="user-guide/describing-information/creating-metadata.html"/-->
       </sidePanel>
